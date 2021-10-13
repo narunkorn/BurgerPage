@@ -8,7 +8,7 @@ const PictureBurger = () => {
       padding="0rem 2rem"
       direction={["column", "column", "row", "row", "row"]}
     >
-      <Flex>
+      <Flex padding={["0rem", "0rem", "2rem", "2rem", "2rem"]}>
         <img
           style={{ width: "35rem" }}
           src="photo/3606214_0001s_0001s_0001_Image.png"

@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import { Flex, Image } from "@chakra-ui/react";
+import { Flex, Box } from "@chakra-ui/react";
 const Head = () => {
   return (
     <div
@@ -11,15 +11,19 @@ const Head = () => {
       <div>
         <div>
           <Navbar />
+
           <Flex
             direction={["column", "column", "row", "row", "row"]}
             justifyContent="space-between"
             alignItems="center"
             padding="0rem 5rem 0rem 5rem"
           >
-            <Flex
+            <Box
               display={["none", "none", "block", "block", "block"]}
-              fontSize={["none", "none", "6rem", "7rem", "8rem"]}
+              width="30rem"
+              margin="2rem"
+              marginRight="2rem"
+              fontSize={["0", "0", "5em", "6em", "7em"]}
             >
               <div
                 style={{
@@ -29,15 +33,10 @@ const Head = () => {
               >
                 BURGER<div>WEEK</div>
               </div>
-            </Flex>
-
-            <img
-              style={{
-                width: "25rem",
-                height: "auto",
-              }}
-              src="photo/brugerGroup.png"
-            />
+            </Box>
+            <Box width="25rem">
+              <img style={{ height: "auto" }} src="photo/brugerGroup.png" />
+            </Box>
           </Flex>
         </div>
       </div>

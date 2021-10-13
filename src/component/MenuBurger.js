@@ -50,7 +50,7 @@ const MenuBurger = () => {
                 {data.name}
               </div>
               <Button colorScheme="orange" variant="solid">
-                Chose
+                Details
               </Button>
             </div>
           );
