@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Red+Hat+Display:ital,wght@1,900&family=Ubuntu:wght@700&display=swap');
 .App {
-  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  color: #42200B;
 }
 
 .App-logo {
