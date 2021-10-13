@@ -2,8 +2,8 @@ import { Flex, Image } from "@chakra-ui/react";
 const PictureBurger = () => {
   return (
     <Flex
-      marginTop="3rem"
-      justifyContent="space-around"
+      marginTop="2rem"
+      justifyContent="space-between"
       alignItems="center"
       padding="0rem 2rem"
       direction={["column", "column", "row", "row", "row"]}

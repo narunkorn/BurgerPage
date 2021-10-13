@@ -5,6 +5,7 @@ const Head = () => {
     <div
       style={{
         backgroundImage: `URL("photo/3606214_0000s_0005s_0002_Rectangle.png")`,
+        backgroundSize: "cover",
       }}
     >
       <div>
@@ -16,10 +17,12 @@ const Head = () => {
             alignItems="center"
             padding="0rem 5rem 0rem 5rem"
           >
-            <Flex display={["none", "none", "block", "block", "block"]}>
+            <Flex
+              display={["none", "none", "block", "block", "block"]}
+              fontSize={["none", "none", "6rem", "7rem", "8rem"]}
+            >
               <div
                 style={{
-                  fontSize: "8rem",
                   color: "#42200B",
                   textShadow: " 3px 3px 1px white",
                 }}
