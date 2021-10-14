@@ -22,9 +22,10 @@ const MenuBurger = () => {
         textAlign: "center",
         fontSize: "300%",
         marginTop: "20px",
+        color: "#42200B",
       }}
     >
-      CHOSE & ENJOY
+      My BURGER
       <br />
       <div
         style={{
