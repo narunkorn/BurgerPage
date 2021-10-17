@@ -1,0 +1,21 @@
+.bg {
+    background-color: orange;
+    text-align: center;
+    font-size: 500%;
+    font-weight: bold;
+    font-weight: 900px;
+}
+
+.contranner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin-top: 3rem; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contranner img {
+    width: 35%;
+    margin: 1rem;
+}

@@ -1,0 +1,26 @@
+.containner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fullmenu {
+    display: block;
+}
+
+.burgermenu {
+    display: none;
+}
+
+@media only screen and (max-width:767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .fullmenu {
+        display: none;
+    }
+    .burgermenu {
+        display: block;
+    }
+}

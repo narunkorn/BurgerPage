@@ -1,0 +1,32 @@
+.background {
+    background-image: url("../myimage/3606214_0000s_0005s_0002_Rectangle.png");
+    animation-name: background;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    padding: 1rem 4rem;
+    z-index: -999;
+    position: relative;
+}
+
+@keyframes background {
+    0% {
+        background-image: url("../myimage/3606214_0000s_0005s_0002_Rectangle.png");
+        top: 0px;
+    }
+    25% {
+        background-image: url("../myimage/3606214_0000s_0005s_0002_Rectangle2.png");
+        top: 0px;
+    }
+    50% {
+        background-image: url("../myimage/3606214_0000s_0005s_0002_Rectangle3.png");
+        top: 0px;
+    }
+    75% {
+        background-image: url("../myimage/3606214_0000s_0005s_0002_Rectangle2.png");
+        top: 0px;
+    }
+    100% {
+        background-image: url("../myimage/3606214_0000s_0005s_0002_Rectangle.png");
+        top: 0px;
+    }
+}

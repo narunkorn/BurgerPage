@@ -1,15 +1,12 @@
-import Header from "../component/Header";
-import PictureBurger from "../component/PictureBurger";
-import MenuBurger from "../component/MenuBurger";
-import Footer from "../component/Footer";
+import Header2 from "../component_2/Header2";
+
+import BurgerMenu from "../component_2/BurgerMenu";
 
 const Home = () => {
   return (
     <div>
-      <Header />
-      <PictureBurger />
-      <MenuBurger />
-      <Footer />
+      <Header2 />
+      <BurgerMenu />
     </div>
   );
 };
