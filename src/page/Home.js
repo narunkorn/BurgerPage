@@ -8,6 +8,7 @@ const Home = () => {
       <Header2 />
       <BurgerMenu />
       <Contact />
+      <div style={{ height: "50px", backgroundColor: "#a01d09" }}></div>
     </div>
   );
 };
