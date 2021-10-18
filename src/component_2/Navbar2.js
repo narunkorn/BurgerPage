@@ -1,33 +1,40 @@
-import { ButtonGroup, Dropdown, DropdownButton, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar2.css";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useState, useEffect } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar2 = () => {
-  const color = "#194d33";
+  const [click, setClick] = useState(false);
+  const handleClick = () => {
+    setClick(!click);
+  };
+  const close = () => {
+    setClick(false);
+  };
+  useEffect(() => {
+    close();
+  }, []);
   return (
     <div className="containner">
       <div>
         <img src="photo/3606214_0000s_0000s_0000_Place-Your-Logo-Here-(Double-Click-to-Edit).png" />
       </div>
-      <div className="burgermenu">
-        <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Dropdown Button
-          </Dropdown.Toggle>
 
-          <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Home</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">BurgerMenu</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">ContactUs</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+      <ul className={click ? "mobile-menu" : "menu"}>
+        <li className="menu-li" onClick={close}>
+          <a href="#Home">Home </a>
+        </li>
+        <li className="menu-li" onClick={close}>
+          <a href="#BurgerMenu">BurgerMenu </a>
+        </li>
+        <li className="menu-li" onClick={close}>
+          <a href="#Contact">contact us </a>
+        </li>
+      </ul>
+      <div className="burgermenu" onClick={handleClick}>
+        {click ? <AiOutlineClose /> : <GiHamburgerMenu />}
       </div>
-
-      <p className="fullmenu">
-        <span>Home </span>
-        <span>BurgerMenu </span>
-        <span>ContactUs </span>
-      </p>
     </div>
   );
 };

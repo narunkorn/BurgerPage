@@ -1,0 +1,28 @@
+.bgContact {
+    background-image: url("../myimage/contact.png");
+    height: 200px;
+    color: rgb(255, 255, 255);
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContactSoical {
+    display: flex;
+    font-size: 80%;
+    list-style-type: none;
+    margin: 2rem 4rem;
+}
+
+li {
+    padding-left: 5rem;
+}
+
+@media only screen and (max-width:767px) {
+    .ContactSoical {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0rem 4rem 4rem 0rem;
+    }
+}

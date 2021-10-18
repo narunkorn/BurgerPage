@@ -2,7 +2,7 @@ import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 const Banner = () => {
   return (
-    <div>
+    <div id="Home">
       <Carousel>
         <Carousel.Item interval={4000}>
           <img

@@ -1,5 +1,4 @@
-.bg {
-    background-color: orange;
+.bgBurgerMenu {
     text-align: center;
     font-size: 500%;
     font-weight: bold;
@@ -9,13 +8,19 @@
 .contranner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     /* margin-top: 3rem; */
     margin-left: 10%;
     margin-right: 10%;
 }
 
 .contranner img {
-    width: 35%;
+    width: 20%;
     margin: 1rem;
+}
+
+@media only screen and (max-width:767px) {
+    .contranner {
+        justify-content: center;
+    }
 }
